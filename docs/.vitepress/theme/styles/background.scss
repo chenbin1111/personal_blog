@@ -1,0 +1,48 @@
+/* ========== 全局背景 ========== */
+:root {
+    --vp-c-bg: transparent;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* ========== 内容卡片 ========== */
+.VPDoc,
+.VPHome {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Footer 样式 ========== */
+.VPFooter {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 24px;
+    margin-top: 0;
+}
+
+.VPFooter .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========== 深色模式 ========== */
+.dark body {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.dark .VPDoc,
+.dark .VPHome,
+.dark .VPFooter {
+    background: rgba(20, 25, 35, 0.9);
+    border-color: rgba(255, 255, 255, 0.05);
+}
