@@ -10,7 +10,7 @@ export const NAV_DATA: NavData[] = [
         title: '学习软件',
         items: [
             {
-                icon: '/icons/gazebo_logo.svg',
+                icon: 'https://classic.gazebosim.org/assets/logos/gazebo_vert_pos-fd53607be2db733ff38e9a9cdae9185722e5810ea7b089405dfd36917bc4c42f.png',
                 title: 'Gazebo Classic',
                 desc: 'Gazebo Classic仿真环境的相关学习',
                 link: 'https://classic.gazebosim.org/tutorials',
