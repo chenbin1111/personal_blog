@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | 彬语的博客</title>
+    <meta name="description" content="记录个人的成长之路">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/personal_blog/assets/style.BROqVxCy.css" as="style">
+    <link rel="preload stylesheet" href="/personal_blog/vp-icons.css" as="style">
+    
+    <script type="module" src="/personal_blog/assets/app.Cm79iUUV.js"></script>
+    <link rel="preload" href="/personal_blog/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/personal_blog/assets/chunks/theme.BCHc8R_d.js">
+    <link rel="modulepreload" href="/personal_blog/assets/chunks/framework.Cckt0kKE.js">
+    <link rel="modulepreload" href="/personal_blog/assets/api-examples.md.Cr4qjgaU.lean.js">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link rel="mask-icon" href="/favicon.ico" color="#3eaf7c">
+    <meta name="msapplication-TileImage" content="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-3373508e><!--[--><!--]--><!--[--><span tabindex="-1" data-v-c4ea84f7></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-c4ea84f7>Skip to content</a><!--]--><!----><header class="VPNav" data-v-3373508e data-v-9eaed4b7><div class="VPNavBar" data-v-9eaed4b7 data-v-ea597bae><div class="wrapper" data-v-ea597bae><div class="container" data-v-ea597bae><div class="title" data-v-ea597bae><div class="VPNavBarTitle" data-v-ea597bae data-v-28f11f69><a class="title" href="/personal_blog/" data-v-28f11f69><!--[--><!--]--><!--[--><img class="VPImage logo" src="/personal_blog/wutiaowu.jpg" alt data-v-4678d1b5><!--]--><span data-v-28f11f69>彬语的博客</span><!--[--><!--]--></a></div></div><div class="content" data-v-ea597bae><div class="content-body" data-v-ea597bae><!--[--><!--]--><div class="VPNavBarSearch search" data-v-ea597bae><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-ea597bae data-v-c11de164><span id="main-nav-aria-label" class="visually-hidden" data-v-c11de164> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/personal_blog/nav/" tabindex="0" data-v-c11de164 data-v-23185051><!--[--><span data-v-23185051>前端导航</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="https://fe-mm.com" target="_blank" rel="noreferrer" tabindex="0" data-v-c11de164 data-v-23185051><!--[--><span data-v-23185051>茂茂主页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/personal_blog/" tabindex="0" data-v-c11de164 data-v-23185051><!--[--><span data-v-23185051>彬语博客</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="https://netease-music.fe-mm.com" target="_blank" rel="noreferrer" tabindex="0" data-v-c11de164 data-v-23185051><!--[--><span data-v-23185051>mmPlayer</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="https://github.com/maomao1996/tampermonkey-scripts" target="_blank" rel="noreferrer" tabindex="0" data-v-c11de164 data-v-23185051><!--[--><span data-v-23185051>油猴脚本</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-ea597bae data-v-6643417c><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-6643417c data-v-a0404292 data-v-7b6febc9><span class="check" data-v-7b6febc9><span class="icon" data-v-7b6febc9><!--[--><span class="vpi-sun sun" data-v-a0404292></span><span class="vpi-moon moon" data-v-a0404292></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-ea597bae data-v-2b3891f8 data-v-0aef6cf6><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenbin1111/personal_blog" aria-label="github" target="_blank" rel="noopener" data-v-0aef6cf6 data-v-ba5ac462><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-ea597bae data-v-ed10a2de data-v-43957410><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-43957410><span class="vpi-more-horizontal icon" data-v-43957410></span></button><div class="menu" data-v-43957410><div class="VPMenu" data-v-43957410 data-v-7ea006de><!----><!--[--><!--[--><!----><div class="group" data-v-ed10a2de><div class="item appearance" data-v-ed10a2de><p class="label" data-v-ed10a2de>Appearance</p><div class="appearance-action" data-v-ed10a2de><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-ed10a2de data-v-a0404292 data-v-7b6febc9><span class="check" data-v-7b6febc9><span class="icon" data-v-7b6febc9><!--[--><span class="vpi-sun sun" data-v-a0404292></span><span class="vpi-moon moon" data-v-a0404292></span><!--]--></span></span></button></div></div></div><div class="group" data-v-ed10a2de><div class="item social-links" data-v-ed10a2de><div class="VPSocialLinks social-links-list" data-v-ed10a2de data-v-0aef6cf6><!--[--><a class="VPSocialLink no-icon" href="https://github.com/chenbin1111/personal_blog" aria-label="github" target="_blank" rel="noopener" data-v-0aef6cf6 data-v-ba5ac462><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-ea597bae data-v-c439aa1c><span class="container" data-v-c439aa1c><span class="top" data-v-c439aa1c></span><span class="middle" data-v-c439aa1c></span><span class="bottom" data-v-c439aa1c></span></span></button></div></div></div></div><div class="divider" data-v-ea597bae><div class="divider-line" data-v-ea597bae></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-3373508e data-v-df84e93f><div class="container" data-v-df84e93f><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-df84e93f data-v-cb236e06><button data-v-cb236e06>Return to top</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-3373508e data-v-c880552e><div class="VPDoc has-aside" data-v-c880552e data-v-777d8fb2><!--[--><!--]--><div class="container" data-v-777d8fb2><div class="aside" data-v-777d8fb2><div class="aside-curtain" data-v-777d8fb2></div><div class="aside-container" data-v-777d8fb2><div class="aside-content" data-v-777d8fb2><div class="VPDocAside" data-v-777d8fb2 data-v-62f0f842><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-62f0f842 data-v-1bcb08fc><div class="content" data-v-1bcb08fc><div class="outline-marker" data-v-1bcb08fc></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-1bcb08fc>On this page</div><ul class="VPDocOutlineItem root" data-v-1bcb08fc data-v-14886ca8><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-62f0f842></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-777d8fb2><div class="content-container" data-v-777d8fb2><!--[--><!--]--><main class="main" data-v-777d8fb2><div style="position:relative;" class="vp-doc _personal_blog_api-examples" data-v-777d8fb2><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">import { useData } from &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">const { theme, page, frontmatter } = useData()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/script&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ theme }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ page }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ frontmatter }}&lt;/pre&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;i18nRouting&quot;: false,
+  &quot;logo&quot;: &quot;/wutiaowu.jpg&quot;,
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;前端导航&quot;,
+      &quot;link&quot;: &quot;/nav/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;茂茂主页&quot;,
+      &quot;link&quot;: &quot;https://fe-mm.com&quot;
+    },
+    {
+      &quot;text&quot;: &quot;彬语博客&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;mmPlayer&quot;,
+      &quot;link&quot;: &quot;https://netease-music.fe-mm.com&quot;
+    },
+    {
+      &quot;text&quot;: &quot;油猴脚本&quot;,
+      &quot;link&quot;: &quot;https://github.com/maomao1996/tampermonkey-scripts&quot;
+    }
+  ],
+  &quot;sidebar&quot;: {},
+  &quot;lastUpdated&quot;: {
+    &quot;text&quot;: &quot;最后更新于&quot;,
+    &quot;formatOptions&quot;: {
+      &quot;dateStyle&quot;: &quot;short&quot;,
+      &quot;timeStyle&quot;: &quot;medium&quot;
+    }
+  },
+  &quot;socialLinks&quot;: [
+    {
+      &quot;icon&quot;: &quot;github&quot;,
+      &quot;link&quot;: &quot;https://github.com/chenbin1111/personal_blog&quot;
+    }
+  ],
+  &quot;footer&quot;: {
+    &quot;message&quot;: &quot;如有转载或 CV 的请标注本站原文地址&quot;,
+    &quot;copyright&quot;: &quot;Copyright © 2019-present maomao&quot;
+  }
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;,
+  &quot;lastUpdated&quot;: 1772115223000
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-777d8fb2 data-v-6ae8920e><!--[--><!--]--><div class="edit-info" data-v-6ae8920e><!----><div class="last-updated" data-v-6ae8920e><p class="VPLastUpdated" data-v-6ae8920e data-v-4c8f9c82>最后更新于: <time datetime="2026-02-26T14:13:43.000Z" data-v-4c8f9c82></time></p></div></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-3373508e data-v-735adce2><div class="container" data-v-735adce2><p class="message" data-v-735adce2>如有转载或 CV 的请标注本站原文地址</p><p class="copyright" data-v-735adce2>Copyright © 2019-present maomao</p></div></footer><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"api-examples.md\":\"Cr4qjgaU\",\"index.md\":\"Dcr-rITZ\",\"markdown-examples.md\":\"BxAijDIz\",\"nav_index.md\":\"jE5z8fPf\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"彬语的博客\",\"description\":\"记录个人的成长之路\",\"base\":\"/personal_blog/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"i18nRouting\":false,\"logo\":\"/wutiaowu.jpg\",\"nav\":[{\"text\":\"前端导航\",\"link\":\"/nav/\"},{\"text\":\"茂茂主页\",\"link\":\"https://fe-mm.com\"},{\"text\":\"彬语博客\",\"link\":\"/\"},{\"text\":\"mmPlayer\",\"link\":\"https://netease-music.fe-mm.com\"},{\"text\":\"油猴脚本\",\"link\":\"https://github.com/maomao1996/tampermonkey-scripts\"}],\"sidebar\":{},\"lastUpdated\":{\"text\":\"最后更新于\",\"formatOptions\":{\"dateStyle\":\"short\",\"timeStyle\":\"medium\"}},\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/chenbin1111/personal_blog\"}],\"footer\":{\"message\":\"如有转载或 CV 的请标注本站原文地址\",\"copyright\":\"Copyright © 2019-present maomao\"}},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":true}");</script>
+    
+  </body>
+</html>
