@@ -68,7 +68,7 @@ export const NAV_DATA: NavData[] = [
         title: 'AI 导航',
         items: [
             {
-                icon: '/icons/deepseek_logo.png',
+                icon: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/deepseek-logo-icon.png',
                 title: 'Deepseek',
                 link: 'https://chat.deepseek.com/',
             },
