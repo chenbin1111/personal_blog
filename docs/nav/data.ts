@@ -21,6 +21,12 @@ export const NAV_DATA: NavData[] = [
                 desc: 'Carla仿真环境的相关学习',
                 link: 'https://carla.readthedocs.io/en/0.9.13/',
             },
+            {
+                icon: '/icons/carla-logo.png',
+                title: 'C++',
+                desc: 'C++编程的学习',
+                link: 'https://www.runoob.com/cplusplus/cpp-tutorial.html',
+            },
         ],
     },
     {

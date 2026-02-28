@@ -1,7 +1,10 @@
 import { defineConfig } from 'vitepress'
+import { basename } from 'node:path'
 import { head, nav, sidebar } from './configs'
+const APP_BASE_PATH = basename(process.env.GITHUB_REPOSITORY || '')
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
   head: head,
   lang: "zh-CN",
   title: "彬语的博客",
@@ -12,8 +15,8 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    i18nRouting: true,
-    logo: './wutiaowu.jpg',
+    i18nRouting: false,
+    logo: '/wutiaowu.jpg',
     nav: nav,
     sidebar: sidebar,
     lastUpdated: {

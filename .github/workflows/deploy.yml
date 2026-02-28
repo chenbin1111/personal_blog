@@ -16,6 +16,8 @@ on:
 # 设置权限
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 # 设置上海时区
 env:
@@ -51,7 +53,7 @@ jobs:
       - name: Build
         env:
           APP_BASE_PATH: /${{ github.repository }}
-        run: pnpm install && pnpm run build
+        run: pnpm install && pnpm run docs:build
 
       # 部署
       - name: Deploy
@@ -62,4 +64,4 @@ jobs:
           # GitHub Pages 读取的分支
           publish_branch: gh-pages
           # 静态文件所在目录
-          publish_dir: dist
+          publish_dir: docs/.vitepress/dist
