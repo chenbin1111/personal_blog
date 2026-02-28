@@ -16,7 +16,7 @@ export const NAV_DATA: NavData[] = [
                 link: 'https://classic.gazebosim.org/tutorials',
             },
             {
-                icon: '/icons/carla-logo.png',
+                icon: 'https://carla.org/img/carla.jpg',
                 title: 'Carla',
                 desc: 'Carla仿真环境的相关学习',
                 link: 'https://carla.readthedocs.io/en/0.9.13/',
